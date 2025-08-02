@@ -194,7 +194,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="min-h-screen bg-white font-sans">
+      <div className="min-h-screen bg-white">
         {/* Navigation */}
         <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -753,53 +753,6 @@ export default function Home() {
           </div>
         </footer>
       </div>
-
-      <style jsx>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        @keyframes slideUp {
-          from {
-            opacity: 0;
-            transform: translateY(50px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-
-        .animate-fade-in-up {
-          animation: fadeInUp 1s ease-out;
-        }
-
-        .animate-slide-up {
-          animation: slideUp 0.6s ease-out forwards;
-        }
-
-        .animate-on-scroll {
-          opacity: 0;
-          transform: translateY(50px);
-          transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-        }
-
-        .animate-on-scroll.animate-slide-up {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        .font-sans {
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-        }
-      `}</style>
     </>
   );
 }
