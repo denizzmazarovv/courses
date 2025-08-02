@@ -1,4 +1,6 @@
 
+'use client';
+
 // Original code with modifications applied
 
 import { useState, useEffect } from 'react';
